@@ -54,7 +54,7 @@ app.post('/api/notes',(request,response)=>{
         date: new Date(),
     })
 
-    note.save().then(savedNote=>{
+        note.save().then(savedNote=>{
         response.json(savedNote)
     })
 })
