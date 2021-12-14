@@ -1,4 +1,13 @@
-DELETE http://localhost:3001/api/notes
+DELETE http://localhost:3001/api/notes/61b6eb460e978a5c29812cb9
+
+###
+PUT http://localhost:3001/api/notes/61b70b157a56f68f5f7aecae
+content-type: application/json
+
+{
+    "content": "updated",
+    "important": false
+}
 
 ###
 POST http://localhost:3001/api/notes
@@ -17,3 +26,6 @@ content-type: application/json
     "contet": "WRONG LMAO",
     "important": true
 }
+
+###
+GET http://localhost:3001/api/notes/293861
