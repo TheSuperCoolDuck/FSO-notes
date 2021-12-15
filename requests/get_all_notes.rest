@@ -29,3 +29,11 @@ content-type: application/json
 
 ###
 GET http://localhost:3001/api/notes/293861
+
+###
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "shor"
+}
