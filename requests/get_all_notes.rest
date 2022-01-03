@@ -23,6 +23,16 @@ POST http://localhost:3001/api/notes
 content-type: application/json
 
 {
+    "content": "Add this note to a user",
+    "important": true,
+    "userId": "61c420f649c004ba39475c4a"
+}
+
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{
     "contet": "WRONG LMAO",
     "important": true
 }
@@ -36,4 +46,24 @@ Content-Type: application/json
 
 {
     "content": "shor"
+}
+
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxYzQyMGY2NDljMDA0YmEzOTQ3NWM0YSIsImlhdCI6MTY0MTE5OTU2OCwiZXhwIjoxNjQxMTk5NTY5fQ.gNp__uuIYJdEnbtKg-lsDqIE8U2jhRKGDa7oZa1Fn5g
+
+{
+    "content": "token test",
+    "important": true
+}
+
+###
+POST http://localhost:3001/api/notes
+content-type: application/json
+Authorization: bearer invaild
+
+{
+    "content": "this has an invaild token",
+    "important": true
 }
